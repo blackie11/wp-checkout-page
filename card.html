@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Ahiakwo Great" />
+        <meta name="description" content="Wp-pusher-checkout" />
+        <!-- GOOGLE FONT LINK FOR LATO -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Wp-pusher-checkout</title>
+    </head>
+    <body>
+        <!-- HEADER STARTS HERE -->
+        <header class="header">
+            <div class="company-logo">
+                <img
+                    src="/third-assigment/wppusher-logo copy.png"
+                    alt="wp-pusher-logo"
+                />
+            </div>
+            <nav class="primary-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Download</a></li>
+                    <li class="nav-item"><a href="#">Learn more</a></li>
+                    <li class="nav-item"><a href="#">Pricing</a></li>
+                    <li class="nav-item"><a href="#">Help</a></li>
+                </ul>
+
+                <button class="login">Account</button>
+            </nav>
+        </header>
+        <!-- <hr /> -->
+        <!-- MAIN CONTAINER FOR CONTENT -->
+        <main class="container">
+            <div class="main-content">
+                <h2 class="title">Checkout</h2>
+                <form action="" method="get">
+                    <div class="basic-info_container">
+                        <h4 class="step-text">
+                            <span class="circle">1</span> Your Basic Information
+                        </h4>
+                        <div class="name-container">
+                            <div class="name">
+                                <label for="firstname" id="firstname"
+                                    >First Name</label
+                                >
+                                <br />
+                                <input
+                                    type="text"
+                                    name="firstname"
+                                    id="firstname"
+                                    required
+                                    placeholder="John"
+                                />
+                            </div>
+                            <div class="name">
+                                <label for="lastname" id="lastname"
+                                    >Last Name</label
+                                >
+                                <br />
+                                <input
+                                    type="text"
+                                    name="lastname"
+                                    id="lastname"
+                                    required
+                                    placeholder="Doe"
+                                />
+                            </div>
+                        </div>
+                        <div class="mail-container">
+                            <label for="email" id="e-mail">E-mail</label><br />
+                            <input
+                                type="email"
+                                name="email"
+                                id="e-mail"
+                                required
+                                placeholder="johndoe@example.com"
+                            />
+                        </div>
+                    </div>
+                    <div class="payment-info_container">
+                        <h4 class="step-text">
+                            <span class="circle">2</span> Your Payment
+                            Information
+                        </h4>
+                        <div class="card-details">
+                            <label for="credit-card"> Credit Card </label><br />
+                            <input
+                                type="text"
+                                name="credit-card"
+                                id="credit-card"
+                                placeholder="Card number"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Buy WP Pusher" />
+                    <div class="help-paragraph">
+                        <div class="question">
+                            <img
+                                src="/third-assigment/Mask.svg"
+                                alt=" Question Mark"
+                            />
+                        </div>
+                        <p>
+                            <span>Need any help?</span> Don’t hesitate to
+                            contact support!
+                        </p>
+                    </div>
+                </form>
+
+                <div class="stripe">
+                    <img
+                        src="/third-assigment/powered_by_stripe.svg"
+                        alt="powered_by_stripe"
+                    />
+                </div>
+            </div>
+            <div class="side-bar">
+                <div class="plan-container">
+                    <h5 class="text">FreeLancer</h5>
+                    <div class="highlighter">
+                        <sup>$</sup>
+
+                        <span class="bold-text">99</span><sub>/year</sub>
+                    </div>
+                    <p>
+                        Automatically renews <br />
+                        after 1 year
+                    </p>
+                    <div class="benefits">
+                        <ul class="plan-benefit_list">
+                            <li class="list-item">
+                                <p>Use on 5 client sites</p>
+                            </li>
+                            <li class="list-item">
+                                <p>Private repositories</p>
+                            </li>
+                            <li class="list-item"><p>Email support</p></li>
+                        </ul>
+                        <p>
+                            Need <strong>20</strong> client sites? <br />
+                            <a href="#" class="agency-plan">
+                                switch to the <strong>agency </strong> plan
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimony-container">
+                    <p class="testimony">
+                        FTP is horrible to deal with
+                        <span class="wp-bold">WP Pusher</span> solves that
+                        issue,and the customer support is awesome!
+                    </p>
+                    <div class="testimoner">
+                        <div class="tes_image">
+                            <img src="Bitmap.png" alt="Bitmap" />
+                        </div>
+                        <span>kirk Beard</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER STARTS HERE -->
+        <footer class="footer">
+            <p>
+                &copy; 2018 WP Pusher IVS ·
+                <a href="#" class="terms_conditions"> Terms of Service</a>
+            </p>
+        </footer>
+    </body>
+</html>

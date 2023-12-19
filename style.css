@@ -1,0 +1,469 @@
+:root {
+    /* Define a variable for the color */
+    --main-blue: #1d2c3c;
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(213, 10%, 44%);
+    --light-blue: hsl(211, 49%, 55%);
+    --light-cyan: hsl(189, 100%, 86%);
+    --light-gray: hsl(216, 16%, 94%);
+    --green: hsl(173, 96%, 28%);
+    --dark-blue: hsl(204, 84%, 41%);
+
+    /* variables for font-weight */
+    --font-weight-thin: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    /* for italic font-weight */
+    --font-weight-italic-regular: 400;
+    --font-weight-italic-bold: 700;
+    --font-weight-italic-black: 900;
+
+    /* Variables for font-size */
+    --font-size-small: 1rem;
+    --font-size-normal: 1.5rem;
+    --font-size-large: 2rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+*,
+*::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+body {
+    height: 100vh;
+    font-family: inherit;
+    background-color: var(--light-cyan);
+    line-height: 1.6;
+    margin: 0 auto;
+}
+/* Basic CSS Reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend,
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+/* Additional Resets for anchor  and button Elements */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Anchor on hover and active */
+a:hover {
+    text-decoration: underline;
+    color: var(--light-gray);
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* style for label and button */
+label {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(51, 51, 51, 0.836);
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #edeff2;
+
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #edeff2;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input[type="submit"] {
+    color: #fff;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #038e7d;
+    cursor: pointer;
+}
+/* styling the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 5%;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.33);
+}
+
+.company-logo {
+    max-width: 8rem;
+}
+
+.primary-navigation {
+    display: flex;
+    gap: 1rem;
+}
+
+.primary-navigation > .nav-list {
+    display: flex;
+    gap: 1.3rem;
+}
+
+/* styling login Button */
+.login {
+    border: 1px solid black;
+    padding-inline: 15px;
+    border-radius: 5px;
+}
+
+/* style for main container */
+main.container {
+    width: min(90%, 800px);
+    display: flex;
+    margin: auto;
+    background-color: var(--white);
+    margin-top: 3.6rem;
+    border-radius: 5px;
+    box-shadow: 5px 0px 10px 10px rgba(237, 234, 234, 0.394);
+}
+
+.main-content {
+    width: 65%;
+    position: relative;
+}
+
+.main-content > .title {
+    padding: 10px 30px;
+    color: #1d2c3c;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: normal;
+    border-bottom: 0.5px solid #f5f7fa;
+    padding-bottom: 10px;
+}
+
+form {
+    padding: 30px;
+}
+
+.step-text {
+    color: #1d2c3c;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.16px;
+}
+
+.step-text > .circle {
+    font-size: 14px;
+    font-weight: var(--font-weight-regular);
+    border: 2px solid #548bc5;
+    text-align: center;
+    padding-inline: 5px;
+    border-radius: 10px;
+    color: #548bc5;
+    letter-spacing: -0.142px;
+}
+
+/* styling for the positioning of input for both name and e-mail address */
+
+.basic-info_container {
+    border-bottom: 0.5px solid #f5f7fa;
+}
+.name-container {
+    padding-top: 1.25rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.name {
+    width: 100%;
+}
+
+.mail-container {
+    margin-top: -1rem;
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.payment-info_container {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.5px solid #f5f7fa;
+}
+
+.card-details {
+    padding-top: 1.23rem;
+    padding-bottom: 1rem;
+}
+
+.help-paragraph {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.question {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.help-paragraph > p {
+    color: #646e7a;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.01px;
+}
+
+.help-paragraph > p > span {
+    color: #1d2c3c;
+}
+
+.stripe {
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    inset: 94.5% 40%;
+}
+
+/* styling the side bar */
+
+.side-bar {
+    width: 38%;
+    background-color: var(--light-blue);
+    padding: 20px;
+    color: white;
+    border-top-right-radius: 5px;
+    border-end-end-radius: 5px;
+}
+
+.plan-container {
+    /* padding: 20px; */
+    border-bottom: 1px solid #ffffffac;
+    padding-bottom: 30px;
+}
+
+.plan-container > p {
+    font-style: italic;
+}
+
+.plan-container > text {
+    color: #fff;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: -0.01px;
+    padding-bottom: 4px;
+}
+
+.highlighter {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+    /* Adjust the font size for the entire text */
+}
+
+.highlighter sup {
+    font-size: 1rem;
+    vertical-align: super;
+    line-height: -1;
+}
+
+.highlighter sub {
+    align-self: last baseline;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.plan-para {
+    font-size: 1.3rem;
+}
+
+.bold-text {
+    font-size: 60px;
+    font-weight: 300;
+    /* Make the bold text */
+    margin-top: -13px;
+}
+
+.benefits {
+    padding-top: 10px;
+}
+
+.benefits > p {
+    color: #fff;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.008px;
+}
+
+.plan-benefit_list {
+    list-style-image: url(/third-assigment/Combined-shape.svg);
+    list-style-position: inside;
+    margin-bottom: 0.8rem;
+}
+
+.plan-benefit_list > .list-item {
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.plan-benefit_list > .list-item > p {
+    display: inline-flex;
+}
+
+.agency-plan {
+    color: #fff;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.008px;
+    border-bottom: 2px solid #b9f4ff84;
+}
+
+.agency-plan:hover {
+    text-decoration: none;
+}
+
+.testimony {
+    padding-top: 15px;
+}
+
+.testimony > p {
+    max-width: 150px;
+    color: #fff;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.009px;
+}
+
+.wp-bold {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.testimoner {
+    padding-top: 5px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.tes_image {
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50px; */
+}
+.tes_image > img {
+    border-radius: 50px;
+}
+.testimoner > span {
+    font-weight: 700;
+}
+
+/* MAIN CONTENT STYLE ENDS HERE  */
+
+/* STYLING FOR THE FOOTER STARTS HERE */
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.footer > p {
+    color: #636b6f;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer > .terms_conditions {
+    color: #31708f;
+}
