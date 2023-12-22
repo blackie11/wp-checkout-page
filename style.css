@@ -467,3 +467,20 @@ footer {
 .footer > .terms_conditions {
     color: #31708f;
 }
+
+/* styling for three input  for the credit card section */
+.child-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* reduce with of the input for both the expiration and cvc  using their class name */
+.reduce-width {
+    width: 20%;
+    border-radius: 0%;
+}
+
+input[name="credit-card"] {
+    border-end-end-radius: 0%;
+    border-start-end-radius: 0%;
+}

@@ -19,10 +19,7 @@
         <!-- HEADER STARTS HERE -->
         <header class="header">
             <div class="company-logo">
-                <img
-                    src="/third-assigment/wppusher-logo copy.png"
-                    alt="wp-pusher-logo"
-                />
+                <img src="wppusher-logo copy.png" alt="wp-pusher-logo" />
             </div>
             <nav class="primary-navigation">
                 <ul class="nav-list">
@@ -91,23 +88,41 @@
                         </h4>
                         <div class="card-details">
                             <label for="credit-card"> Credit Card </label>
-                            <input
-                                type="text"
-                                name="credit-card"
-                                id="credit-card"
-                                placeholder="Card number"
-                                required
-                            />
+
+                            <div class="child-input">
+                                <input
+                                    type="text"
+                                    name="credit-card"
+                                    id="credit-card"
+                                    placeholder="Card number"
+                                    required
+                                    class="card-input"
+                                />
+
+                                <input
+                                    type="month"
+                                    name="expiration"
+                                    id="credit-card"
+                                    placeholder="MM / YY"
+                                    class="reduce-width"
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    name="cvc"
+                                    id="credit-card"
+                                    placeholder="CVC"
+                                    class="reduce-width"
+                                    required
+                                />
+                            </div>
                         </div>
                     </div>
 
                     <input type="submit" value="Buy WP Pusher" />
                     <div class="help-paragraph">
                         <div class="question">
-                            <img
-                                src="/third-assigment/Mask.svg"
-                                alt=" Question Mark"
-                            />
+                            <img src="Mask.svg" alt=" Question Mark" />
                         </div>
                         <p>
                             <span>Need any help?</span> Don’t hesitate to
@@ -117,10 +132,7 @@
                 </form>
 
                 <div class="stripe">
-                    <img
-                        src="/third-assigment/powered_by_stripe.svg"
-                        alt="powered_by_stripe"
-                    />
+                    <img src="powered_by_stripe.svg" alt="powered_by_stripe" />
                 </div>
             </div>
             <div class="side-bar">
